@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid system</title>
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin:0;
+      }
+      .container{
+        background-color:	#00ffbf;
+        min-height: 100vh;
+      }
+      .my-column{
+        text-align: center;
+        min-height: 50vh;
+        background-color:#8000ff;
+      }
+
+    </style>
+</head>
+<!-- Column: .col
+prefix class:
+  - c - moblie
+  - m - tablet
+  - l - PC
+  m-4: 12\3(cột) = 4
+-->
+<body>
+  <div class="grid wide container">
+    <div class="row">
+     <div class="col l-3 m-6 c-6">
+       <div class="course-item">
+         <h1>Course 1</h1>
+       </div>
+     </div>
+
+     <div class="col l-3 m-6 c-6">
+      <div class="course-item">
+        <h1> Course 2</h1>
+      </div>
+    </div>
+    <div class="col l-3 m-6 c-6">
+      <div class="course-item">
+        <h1> Course 3</h1>
+      </div>
+    </div>
+    <div class="col l-3 m-6 c-6">
+      <div class="course-item">
+        <h1> Course 4</h1>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

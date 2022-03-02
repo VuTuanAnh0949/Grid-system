@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid system</title>
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin:0;
+      }
+      .container{
+        background-color:	#00ffbf;
+      }
+      .my-column{
+        text-align: center;
+        min-height: 50vh;
+        background-color:#8000ff;
+      }
+
+    </style>
+</head>
+<!-- Column: .col
+prefix class:
+  - c - moblie
+  - m - tablet
+  - l - PC
+  m-4: 12\3(cột) = 4
+-->
+<body>
+  <div class="grid wide container">
+    <div class="ro">
+      <div class="col l-6">
+        <div class="my-column">
+          <h1>Column 1</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

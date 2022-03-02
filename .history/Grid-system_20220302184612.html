@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid system</title>
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin:0;
+      }
+      .container{
+        text-align: center;
+      }
+   .course-item{
+    background-color: #b399ff;
+    height: 260px;
+    
+   }
+   h1{
+     color: white;
+     line-height: 260px;
+     margin: 0; /* Mặc định lầ v */
+   }
+   @media(max-width:738px)
+    </style>
+</head>
+<!-- Column: .col
+prefix class:
+  - c - moblie
+  - m - tablet
+  - l - PC
+  m-4: 12\3(cột) = 4
+-->
+<body>
+  <div class="grid wide container">
+    <div class="row">
+
+     <div class="col l-3 m-6 c-6">
+       <div class="course-item">
+         <h1>Course 1</h1>
+       </div>
+     </div>
+
+     <div class="col l-3 m-6 c-6">
+      <div class="course-item">
+        <h1> Course 2</h1>
+      </div>
+    </div>
+    <div class="col l-3 m-6 c-6">
+      <div class="course-item">
+        <h1> Course 3</h1>
+      </div>
+    </div>
+    <div class="col l-3 m-6 c-6">
+      <div class="course-item">
+        <h1> Course 4</h1>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
